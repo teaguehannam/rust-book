@@ -3,3 +3,5 @@ Cargo - dependency manager and build tool
 Rustfmt - Ensures consistent coding style across developers
 Rust Language Server - IDE code completion integration and error messages
 rustup - command line tool for manageing rust versions and tools
+crates.io - shared open source Rust projects
+	running "cargo doc --open" will open dependancy information
