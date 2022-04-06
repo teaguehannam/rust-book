@@ -1,0 +1,25 @@
+
+Ownership 
+	Allows memory safety without a garbage collector
+	Each value has a variable that's called its owner
+	Only one owner at a time
+	When owner out of scope, value is dropped
+
+Data
+	Stack
+		Last in, First Out (like a stack of plates)
+		Adding data is called pushing onto the stack
+		removing data is called popping off the stack
+		All data must have a known, fixed size
+		Unknown size must be stored on the heap
+		Pushing to stack is faster than allocating on the heap
+
+	Heap
+		Allocating space, and accessing data in the heap is slower
+		Marks empty memory spot with enough space,
+		and returns a pointer (address of location)
+		Like being seated at a restaurant
+			How many people (data size)
+			staff finds empty table that fits everyone
+			Anyone who is late, can be pointed to your table
+
