@@ -1,0 +1,43 @@
+Types:
+
+	Scalar types
+
+		integers (no fractional component)
+			Signed: if number can be negative (+/- before it)
+			Types (default = i32)
+				8-bit: signed(i8) unsigned(u8)
+				16-bit: signed(i16) unsigned(u16)
+				32-bit: signed(i32) unsigned(u32)
+				64-bit: signed(i64) unsigned(u64)
+				128-bit: signed(i128) unsigned(u128)
+				arch: signed(isize) unsigned(usize)
+			Literals:
+				Decimal - 98_222
+				Hex - 0xff
+				Octal - 0o77
+				Binary - 0b1111_0000
+				Byte (u8 only) - a'A'
+
+		floating-point numbers (IEEE-754 standard)
+			Types (default = f64, similar performance on modern CPUs)
+				f32 - single precision
+				f64 - double precision
+
+		Booleans 
+			can be true or false
+			1 byte in size
+
+		characters
+			char literals declared with single quotes
+			string literals declared with double quotes
+			four bytes and represent a Unicode Scalar Value
+			can represent more than just ASCII
+
+	Compound Types
+	
+		Tuple
+			groups together values with a variety of types into one type
+
+		Array
+			All elements have the same type
+			Have a fixed length, and stored on the stack

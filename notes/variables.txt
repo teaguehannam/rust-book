@@ -1,0 +1,10 @@
+Variables:
+
+	let
+		By default, declares an immutable object
+		"let mut" will allow the variable to be reassigned
+
+	const (constant)
+		naming convention is to use all uppercase with underscores
+		valid for entire time a program runs, within declared scope
+		useful when hardcoded value needed for multiple parts
