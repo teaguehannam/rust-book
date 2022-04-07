@@ -1,0 +1,19 @@
+As a package grows, parts can be extracted into separate crates that become external depenencies.
+This allow for reuseability, and defines the which parts are public vs private.
+
+Packages and Crates
+	
+	"crate root" is the source file that the compiler starts from
+
+	"package" is one or more crates that provide a set of functionality
+		contains a Cargo.toml file, which describes how to build crates
+
+	Cargo.toml follows a convention that src/main.rs is the crate root
+
+Modules
+	
+	Organize code within a create into groups for readability and reuse
+
+	Control the privacy of the items
+		public - can be used outside code
+		private - internal implementation not available for outside use
