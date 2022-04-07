@@ -5,6 +5,12 @@ Ownership
 	Only one owner at a time
 	When owner out of scope, value is dropped
 
+References
+	Must always be valid
+	At any given time, you can have either:
+		One mutable reference 
+		Any number of immutable references
+
 Data
 	Stack
 		Last in, First Out (like a stack of plates)
