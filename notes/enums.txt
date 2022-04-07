@@ -4,3 +4,5 @@ Defined by enumerating possible values
 
 Can be used directly with match
 	Exhaustive, so it has to match all possible options
+
+if let syntax allows value matching to one pattern while ignoring the rest
