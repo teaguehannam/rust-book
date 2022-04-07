@@ -1,0 +1,10 @@
+Structs and tuples
+
+	Similar:
+		both hold multiple related values
+		can hold different types
+
+	Difference:
+		key name for each piece of data
+		doesn't rely on order of data to access
+
