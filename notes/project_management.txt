@@ -17,3 +17,5 @@ Modules
 	Control the privacy of the items
 		public - can be used outside code
 		private - internal implementation not available for outside use
+
+	"cargo new --lib {name}" creates a new library

@@ -1,3 +1,29 @@
+use std::fmt::Result;
+// providing a keyboard for duplicate
+use std::io::Result as IoResult;
+
+fn function1() -> Result {
+    // --snip--
+    Ok(())
+}
+
+fn function2() -> IoResult<()> {
+    // --snip--
+    Ok(())
+}
+
+
+/*
+crate
+ └── front_of_house
+     ├── hosting
+     │   ├── add_to_waitlist
+     │   └── seat_at_table
+     ├── serve_order (super example)
+     └── serving
+         ├── take_order
+         └── take_payment
+*/
 
 mod front_of_house {
     pub mod hosting {
@@ -13,19 +39,8 @@ mod front_of_house {
     }
 }
 
-fn serve_order() {}
 
-/*
-crate
- └── front_of_house
-     ├── hosting
-     │   ├── add_to_waitlist
-     │   └── seat_at_table
-     ├── serve_order (super example)
-     └── serving
-         ├── take_order
-         └── take_payment
-*/
+fn serve_order() {}
 
 mod back_of_house {
     fn fix_incorrect_order() {
@@ -50,12 +65,23 @@ mod back_of_house {
         }
     }
 
-    // Can be used by eat_at_restaurant (pub)
+    // Can be used by eat_at_restaurant (because public)
     pub enum Appetizer {
         Soup,
         Salad,
     }
 }
+
+// ---- importing via use ----
+// Absolute path (idiomatic)
+use crate::front_of_house::hosting;
+
+// Relative path (idiomatic)
+// use self::front_of_house::hosting;
+
+// Absolute path (unidiomatic)
+// When called, it's unclear where it's from
+// use crate::front_of_house::hosting::add_to_waitlist;
 
 pub fn eat_at_restaurant() {
     // Order a breakfast in the summer with Rye toast
@@ -66,6 +92,14 @@ pub fn eat_at_restaurant() {
 
     let order1 = back_of_house::Appetizer::Soup;
     let order2 = back_of_house::Appetizer::Salad;
+
+    // Brought into scope with use
+    hosting::add_to_waitlist();
+    hosting::add_to_waitlist();
+    hosting::add_to_waitlist();
+
+    // -- unidiomatic version --
+    // add_to_waitlist();
 }
 
 
