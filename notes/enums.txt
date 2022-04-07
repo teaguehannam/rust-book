@@ -3,3 +3,4 @@ Similar to structs, but only in one state at a time
 Defined by enumerating possible values
 
 Can be used directly with match
+	Exhaustive, so it has to match all possible options
