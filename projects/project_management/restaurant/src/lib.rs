@@ -1,5 +1,5 @@
 use std::fmt::Result;
-// providing a keyboard for duplicate
+// providing a keyword for duplicate
 use std::io::Result as IoResult;
 
 fn function1() -> Result {
