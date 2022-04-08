@@ -1,13 +1,13 @@
 
-Ferris - The rustacean crab
 Cargo - dependency manager and build tool
-Rustfmt - Ensures consistent coding style across developers
-Rust Language Server - IDE code completion integration and error messages
-rustup - command line tool for manageing rust versions and tools
-crates.io - shared open source Rust projects
-	"cargo doc --open" will open dependancy documentation
-
-Packages - A Cargo feature that lets you build, test, and share crates
 Crates - A tree of modules that produces a library (binary) or executable
+crates.io - shared open source Rust projects
+	"cargo doc --open" deploys local documentation
+Ferris - The rustacean crab
 Modules and use - Let you control the organization, scope, and privacy of paths
+Packages - A Cargo feature that lets you build, test, and share crates
 Paths - A way of naming an item, such as a struct, function, or module
+Rust Language Server - IDE code completion integration and error messages
+Rustfmt - Ensures consistent coding style across developers
+rustup - command line tool for manageing rust versions and tools
+
