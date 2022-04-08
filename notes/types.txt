@@ -41,3 +41,9 @@ Types:
 		Array
 			All elements have the same type
 			Have a fixed length, and stored on the stack
+
+	Generic Types
+
+		Abstract stand-ins for concrete types or other properties
+
+		
