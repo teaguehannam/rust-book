@@ -1,0 +1,26 @@
+
+Grouped into two major categories
+	
+	recoverable
+		eg. file not found
+			report problem, and retry
+		Using the enum "Result" can recover from errors instead of aborting 
+
+	unrecoverable
+		eg. bugs, trying to access location beyond memory
+			immediately stops the program
+
+		Responses (panic)
+			By default, the program starts unwinding
+				walks back and cleans up the stack, and data from functions
+	
+			Alternatively, putting this in the Cargo.toml:
+				[profile.release]
+				panic = 'abort'
+			makes the resulting binary small as possible,
+			by aborting immediatly after an unrecoverable error
+
+
+
+
+
