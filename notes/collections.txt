@@ -5,7 +5,8 @@ Collections are a data structure stored on the heap.
 Types
 
 	Vector
-		Stores a variable number of values next to eachother 
+		Stores a variable number of values next to eachother
+		push/pop used to add/remove last element
 
 	String
 		Collection of characters
