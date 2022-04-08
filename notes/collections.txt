@@ -1,0 +1,15 @@
+Collections are a data structure stored on the heap.
+	data size does not need to be known at compile time
+	can grow or shink as the program runs
+
+Types
+
+	Vector
+		Stores a variable number of values next to eachother 
+
+	String
+		Collection of characters
+
+	Hash Map
+		Associated key:values
+
