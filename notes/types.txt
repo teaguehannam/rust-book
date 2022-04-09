@@ -46,4 +46,6 @@ Types:
 
 		Abstract stand-ins for concrete types or other properties
 
-		
+	Traits
+
+		Methods that can be called on a type
