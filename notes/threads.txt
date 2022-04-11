@@ -1,0 +1,17 @@
+
+When the program recieves a new task, it assigns one of the threads in the pool to the task
+
+Remaining threads, are available to handle any other taskss while assigned threads are are processing
+
+Once tasks is complete, assigned thread return to thread pool
+
+This allow for concurrency
+
+To protect from DoS attacks, it's smart to limit the pool to a small number
+
+other ways to improve throughput of server:
+	 fork/join model 
+	 single-threaded async I/O model
+
+
+more info: https://doc.rust-lang.org/std/thread/

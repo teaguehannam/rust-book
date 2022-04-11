@@ -39,6 +39,7 @@ fn handle_connection(mut stream: TcpStream) {
         contents
     );
 
-    stream.write(response.as_bytes()).unwrap();  // send it
-    stream.flush().unwrap(); // end single connection
+    // send it
+    stream.write(response.as_bytes()).unwrap();
+    stream.flush().unwrap(); // end stream
 }
