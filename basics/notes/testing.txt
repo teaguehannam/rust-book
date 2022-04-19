@@ -1,0 +1,7 @@
+
+Automated tests can be created within the language
+
+Steps
+	Set up any needed data or state.
+	Run the code you want to test.
+	Assert the results are what you expect.
